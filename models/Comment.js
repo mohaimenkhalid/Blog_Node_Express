@@ -1,15 +1,17 @@
 const { Schema, model } = require('mongoose')
+const Post = require('Post')
+const User = require('User')
 
 const commentSchema = Schema({
     post: {
         type: Schema.Types.ObjectID,
-        ref: 'Post',
+        ref: Post,
         required: true,
     },
     user: {
         type: Schema.Types.ObjectID,
         required: true,
-        ref: 'User'
+        ref: User
     },
     body: {
         type: String,
@@ -25,7 +27,7 @@ const commentSchema = Schema({
             user: {
                 type: Schema.Types.ObjectID,
                 required: true,
-                ref: 'User'
+                ref: User
             },
             createdAt: {
                 type: Date,
