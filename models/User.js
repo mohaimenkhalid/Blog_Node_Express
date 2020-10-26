@@ -1,11 +1,11 @@
 const { Schema, model } = require('mongoose')
-const Profile = require('Profile')
+/*const Profile = require('Profile')*/
 
 const userSchema = new Schema({
     username: {
         type: String,
         trim: true,
-        maxlength: 15,
+        maxlength: 30,
         required: true
     },
     email: {
@@ -19,7 +19,7 @@ const userSchema = new Schema({
     },
     profile: {
         type: Schema.Types.ObjectID,
-        ref: Profile
+        ref: 'Profile'
     }
 }, {
     timestamps: true

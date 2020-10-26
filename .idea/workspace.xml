@@ -22,10 +22,12 @@
     <list default="true" id="18b6f758-fb40-4ccc-963c-b1ab052795f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/authController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/auth/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/auth/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/auth/signup.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/auth/signup.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,8 @@
       <updated>1603460853120</updated>
       <workItem from="1603460854168" duration="11480000" />
       <workItem from="1603553981682" duration="6118000" />
-      <workItem from="1603642818778" duration="8472000" />
+      <workItem from="1603642818778" duration="8838000" />
+      <workItem from="1603684174326" duration="18439000" />
     </task>
     <servers />
   </component>
