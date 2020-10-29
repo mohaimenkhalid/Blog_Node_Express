@@ -1,12 +1,29 @@
 const User = require('../models/User')
 const bcrypt = require('bcrypt')
+const { validationResult } = require('express-validator')
+const errorFormatter = require('../utiles/validationErrorFormatter')
 
 exports.signupGetController = (req, res, next) => {
-    res.render('pages/auth/signup', { title: 'Create a new account'})
+    res.render('pages/auth/signup', {
+        title: 'Create a new account',
+        error: {},
+        value: {}
+    })
 }
 
 exports.signupPostController = async (req, res, next) => {
-    let {username, email, password} = req.body
+    let { username, email, password } = req.body
+    console.log(req.body)
+    let errors = validationResult(req).formatWith(errorFormatter)
+    if(!errors.isEmpty()){
+        return res.render('pages/auth/signup', {
+            title: 'Create a new account',
+            error: errors.mapped(),
+            value: {
+                username, email
+            }
+        })
+    }
     try {
         let hashedPassword = await bcrypt.hash(password, 11)
         let user = new User({
@@ -16,7 +33,11 @@ exports.signupPostController = async (req, res, next) => {
         })
         let createdUser = await user.save()
         console.log('User Created Successfully', createdUser)
-        res.render('pages/auth/signup', { title: 'Create a new account'})
+        res.render('pages/auth/signup', {
+            title: 'Create a new account',
+            error: {},
+            value: {}
+        })
     } catch (e) {
         console.log(e)
         next(e)
