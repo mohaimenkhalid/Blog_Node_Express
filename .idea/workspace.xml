@@ -25,7 +25,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/authController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/authRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/auth/signup.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/auth/signup.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/auth/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/auth/login.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,8 @@
       <workItem from="1603817906828" duration="2010000" />
       <workItem from="1603901602184" duration="778000" />
       <workItem from="1603907371211" duration="2820000" />
-      <workItem from="1603985654844" duration="10907000" />
+      <workItem from="1603985654844" duration="11864000" />
+      <workItem from="1604028612128" duration="4215000" />
     </task>
     <servers />
   </component>
@@ -125,9 +126,10 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="712" y="277" width="1022" height="737" key="SettingsEditor/54.27.1866.1053/1920.85.1440.900@54.27.1866.1053" timestamp="1603901846156" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603818755380">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="661" y="255" width="672" height="687" key="search.everywhere.popup" timestamp="1604032617733">
+      <screen x="56" y="27" width="1864" height="1053" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1603818755380" />
+    <state x="661" y="255" width="672" height="687" key="search.everywhere.popup/56.27.1864.1053/1920.85.1440.900@56.27.1864.1053" timestamp="1604032617733" />
   </component>
 </project>
