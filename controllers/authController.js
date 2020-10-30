@@ -76,8 +76,8 @@ exports.loginPostController = async (req, res, next) => {
                 error_message: 'username or password is wrong',
             })
         }
-        console.log("Login successful", user)
-        res.render('pages/auth/login', { title: 'Login to your account'})
+        res.setHeader('Set-cookie', 'isLoggedIn=true')
+        res.render('pages/auth/login', { title: 'Login to your account', error: {}, error_message: ''})
     } catch (e) {
         
     }
