@@ -45,7 +45,12 @@ exports.signupPostController = async (req, res, next) => {
 }
 
 exports.loginGetController = (req, res, next) => {
-     res.render('pages/auth/login', { title: 'Login to your account', error: {}, error_message: ''})
+    console.log(req.session.isLoggedIn, req.session.user)
+     res.render('pages/auth/login', {
+         title: 'Login to your account',
+         error: {},
+         error_message: ''
+     })
 }
 
 exports.loginPostController = async (req, res, next) => {
@@ -76,8 +81,13 @@ exports.loginPostController = async (req, res, next) => {
                 error_message: 'username or password is wrong',
             })
         }
-        res.setHeader('Set-cookie', 'isLoggedIn=true')
-        res.render('pages/auth/login', { title: 'Login to your account', error: {}, error_message: ''})
+        req.session.isLoggedIn = true
+        req.session.user = user
+        res.render('pages/auth/login', {
+            title: 'Login to your account',
+            error: {},
+            error_message: ''
+        })
     } catch (e) {
         
     }

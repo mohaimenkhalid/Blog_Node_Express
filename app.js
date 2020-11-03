@@ -1,10 +1,18 @@
 const express = require('express')
 const morgan = require('morgan')
 const mongoose = require('mongoose')
+const session = require('express-session')
+const MongoDBStore = require('connect-mongodb-session')(session);
 
 //Import routes
 const authRoute = require('./routes/authRoute')
 
+const  mongoAtlasUri = "mongodb+srv://root:root@cluster0.zdrps.mongodb.net/blog-express?retryWrites=true&w=majority";
+const store = new MongoDBStore({
+    uri: mongoAtlasUri,
+    collection: 'sessions',
+    expire: 1000 * 60 * 60 * 2
+});
 
 const app = express();
 // Setup view Engine
@@ -16,7 +24,13 @@ const middleware = [
     morgan('dev'),
     express.static('public'),
     express.urlencoded({ extended: true }),
-    express.json()
+    express.json(),
+    session({
+        secret: process.env.SECRET_KEY || 'SECRET_KEY',
+        resave: false,
+        saveUninitialized: false,
+        store: store
+    })
 ]
 app.use(middleware)
 
@@ -28,7 +42,7 @@ app.get('/', (req, res) => {
 
 const PORT = process.env.PORT || 5000
 //Connect with mongodb server
-const  mongoAtlasUri = "mongodb+srv://root:root@cluster0.zdrps.mongodb.net/blog-express?retryWrites=true&w=majority";
+
 mongoose.connect(mongoAtlasUri, { useNewUrlParser: true, useUnifiedTopology: true})
     .then( () =>{
         app.listen(PORT, () => {
