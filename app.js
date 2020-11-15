@@ -2,16 +2,18 @@ const express = require('express')
 const morgan = require('morgan')
 const mongoose = require('mongoose')
 const session = require('express-session')
-const MongoDBStore = require('connect-mongodb-session')(session);
+const MongoDBStore = require('connect-mongodb-session')(session)
 
 //Import routes
 const authRoute = require('./routes/authRoute')
+//Import middleware
+const { bindUserWithRequest } = require('./middleware/authMiddleware')
 
 const  mongoAtlasUri = "mongodb+srv://root:root@cluster0.zdrps.mongodb.net/blog-express?retryWrites=true&w=majority";
 const store = new MongoDBStore({
     uri: mongoAtlasUri,
     collection: 'sessions',
-    expire: 1000 * 60 * 60 * 2
+    expires: 1000 * 60 * 60 * 2
 });
 
 const app = express();
@@ -30,7 +32,8 @@ const middleware = [
         resave: false,
         saveUninitialized: false,
         store: store
-    })
+    }),
+    bindUserWithRequest()
 ]
 app.use(middleware)
 
