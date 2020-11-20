@@ -8,6 +8,7 @@ const MongoDBStore = require('connect-mongodb-session')(session)
 const authRoute = require('./routes/authRoute')
 //Import middleware
 const { bindUserWithRequest } = require('./middleware/authMiddleware')
+const setLocal = require('./middleware/setLocals')
 
 const  mongoAtlasUri = "mongodb+srv://root:root@cluster0.zdrps.mongodb.net/blog-express?retryWrites=true&w=majority";
 const store = new MongoDBStore({
@@ -33,7 +34,9 @@ const middleware = [
         saveUninitialized: false,
         store: store
     }),
-    bindUserWithRequest()
+    //session data bind into request
+    bindUserWithRequest(),
+    setLocal()
 ]
 app.use(middleware)
 
