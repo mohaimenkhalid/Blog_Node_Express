@@ -1,7 +1,7 @@
 module.exports = () => {
-    return async (req, res, next) => {
-        res.locales.user = req.user
-        res.locales.isLoggedIn = req.session.isLoggedIn;
+    return (req, res, next) => {
+        res.locals.user = req.user
+        res.locals.isLoggedIn = req.session.isLoggedIn;
         next()
     }
 }
