@@ -45,7 +45,6 @@ exports.signupPostController = async (req, res, next) => {
 }
 
 exports.loginGetController = (req, res, next) => {
-    console.log(req.session.isLoggedIn, req.session.user)
      res.render('pages/auth/login', {
          title: 'Login to your account',
          error: {},
@@ -57,7 +56,7 @@ exports.loginPostController = async (req, res, next) => {
     let { email, password } = req.body
     let errors = validationResult(req).formatWith(errorFormatter)
     if(!errors.isEmpty()){
-        console.log(errors.mapped())
+        req.flash('fail', 'Error occoured!')
         return res.render('pages/auth/login', {
             title: 'Login to your account',
             error: errors.mapped(),
@@ -86,7 +85,7 @@ exports.loginPostController = async (req, res, next) => {
         req.session.save()
         res.redirect('/dashboard')
     } catch (e) {
-        
+        console.log(e)
     }
 }
 

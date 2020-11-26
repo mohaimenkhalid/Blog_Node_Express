@@ -3,6 +3,7 @@ const morgan = require('morgan')
 const mongoose = require('mongoose')
 const session = require('express-session')
 const MongoDBStore = require('connect-mongodb-session')(session)
+const flash = require('connect-flash')
 
 //Import routes
 const authRoute = require('./routes/authRoute')
@@ -37,7 +38,8 @@ const middleware = [
     }),
     //session data bind into request
     bindUserWithRequest(),
-    setLocal()
+    setLocal(),
+    flash()
 ]
 app.use(middleware)
 
