@@ -11,7 +11,7 @@ class Flash {
     }
 
     hasMessage(){
-        return (this.success || this.fail) === false ? false : true
+        return (this.success && this.fail) === false ? false : true
     }
 
     static getMessage(req) {

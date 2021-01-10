@@ -1,33 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <expand />
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18b6f758-fb40-4ccc-963c-b1ab052795f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/authController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/dashboardController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/dashboardController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utiles/Flash.js" beforeDir="false" afterPath="$PROJECT_DIR$/utiles/Flash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/auth/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/auth/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/auth/signup.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/auth/signup.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/head.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/head.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +25,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
@@ -51,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/xampp/htdocs/role-management-laravel" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
@@ -84,7 +77,13 @@
       <workItem from="1605964014599" duration="6135000" />
       <workItem from="1606148034466" duration="9512000" />
       <workItem from="1606234944094" duration="1938000" />
-      <workItem from="1606408996183" duration="9568000" />
+      <workItem from="1606408996183" duration="10346000" />
+      <workItem from="1606489010937" duration="3732000" />
+      <workItem from="1606577059151" duration="1484000" />
+      <workItem from="1607534422739" duration="2104000" />
+      <workItem from="1608460348957" duration="795000" />
+      <workItem from="1610296012564" duration="18000" />
+      <workItem from="1610296289645" duration="9205000" />
     </task>
     <servers />
   </component>
@@ -134,20 +133,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="712" y="277" width="1022" height="737" key="SettingsEditor" timestamp="1603901846156">
-      <screen x="54" y="27" width="1866" height="1053" />
-    </state>
-    <state x="712" y="277" width="1022" height="737" key="SettingsEditor/54.27.1866.1053/1920.85.1440.900@54.27.1866.1053" timestamp="1603901846156" />
-    <state x="679" y="162" width="618" height="783" key="find.popup" timestamp="1605716796486">
-      <screen x="56" y="27" width="1864" height="1053" />
-    </state>
-    <state x="679" y="162" width="618" height="783" key="find.popup/56.27.1864.1053/1920.85.1440.900@56.27.1864.1053" timestamp="1605716796486" />
-    <state x="661" y="255" width="672" height="687" key="search.everywhere.popup" timestamp="1606152973631">
-      <screen x="56" y="27" width="1864" height="1053" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1603818755380" />
-    <state x="661" y="255" width="672" height="687" key="search.everywhere.popup/56.27.1864.1053/1920.85.1440.900@56.27.1864.1053" timestamp="1606152973631" />
   </component>
 </project>

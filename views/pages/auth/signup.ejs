@@ -11,7 +11,7 @@
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" value="<%= value.username ? value.username : '' %>" class="form-control <%= error.username ? 'is-invalid' : '' %>" name="username" id="username" placeholder="Enter your Name" />
+                                    <input type="text" value="<%= value ? value.username : '' %>" class="form-control <%= error.username ? 'is-invalid' : '' %>" name="username" id="username" placeholder="Enter your Name" />
                                     <div class="invalid-feedback">
                                         <%= error.username && error.username %>
                                     </div>
